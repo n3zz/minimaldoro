@@ -1,46 +1,73 @@
+* {
+  --main-bg-color: #323437;
+  --font-color: #d1d0c5;
+  --buttontxt-color: #aeada3;
+  --buttonhighlight-color: #ddf0ff;
+}
+
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f5f5f5;
-    margin: 0;
-    font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--main-bg-color);
+  color: var(--font-color);
+  margin: 0;
+  font-family: "Bassier Mono", "Roboto Mono", sans-serif;
+}
+
+header {
+  position: absolute; /* Allows for positioning relative to the body */
+  font-family: "Basier Mono";
+  top: 0;
+  left: 0;
+  padding-left: 30px;
+  width: 100%; /* Ensure the header spans the full width */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  text-align: left; /* Ensure text aligns to the left */
 }
 
 .timer-container {
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px; /* Increased from 40px to 60px */
+  border-color: transparent;
+  width: 100%; /* Added to make the container wider */
+  max-width: 600px; /* Ensures it doesn't get too wide on large screens */
 }
 
 #timer {
-    font-size: 48px;
-    margin: 20px 0;
+  font-size: 200px;
+  margin: 20px 0;
 }
 
 .controls {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  font-family: "Basier Mono", "Roboto Mono", system-ui, sans-serif;
+  padding: 10px 20px;
+  font-size: 30px;
+  border-color: transparent;
+  cursor: pointer;
+  background: none;
+  outline: none;
+  box-shadow: none;
+  color:var(--buttontxt-color);
 }
 
-#start-btn {
-    background-color: #4caf50;
-    color: #fff;
+#start-btn:hover {
+    color:var(--buttonhighlight-color);
 }
 
-#reset-btn {
-    background-color: #f44336;
-    color: #fff;
+#stop-btn:hover {
+    color:var(--buttonhighlight-color);
+}
+
+#reset-btn:hover {
+    color:var(--buttonhighlight-color);
 }
