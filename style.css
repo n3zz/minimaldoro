@@ -18,7 +18,6 @@ body {
 
 header {
   position: absolute; /* Allows for positioning relative to the body */
-  font-family: "Basier Mono";
   top: 0;
   left: 0;
   padding-left: 30px;
